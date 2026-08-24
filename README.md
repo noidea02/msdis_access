@@ -2,12 +2,12 @@
  
 Wrapper library (C, header-only) for the undocumented Microsoft Disassembler DLL (MSDis). Provides easy access to the x86 instruction decoding functionality of MSDis.
 
-This library only works on Windows-based systems and requires MSVCDIS140.DLL to be present. When initializing the library, the location of MSVCDIS140.DLL must be specified. In general,<br>
+This library only works on Windows-based systems and requires MSVCDIS140.DLL to be present. When initializing the library, the location of MSVCDIS140.DLL must be specified. In general,
 being backwards compatible with older versions of MSDis is not a goal of this library.
 
-The wrapper code itself is thread-safe, however the status of MSDis regarding thread safety is unverified. MSDis does use a handle system to identify different disassembler instances and<br>
-so far is being used in multithreaded applications successfully (without additional synchronization), however this still doesn't mean that MSDis is officially thread-safe. If you use this library<br>
-(and therefore MSDis) in multithreaded applications without additional synchronization, you are doing so at your own risk.
+The wrapper code itself is thread-safe, however the status of MSDis regarding thread safety is unverified. MSDis does use a handle system to identify different disassembler instances and
+so far is being used in multithreaded applications successfully (without additional synchronization), however this still doesn't mean that MSDis is officially thread-safe. If you use this
+library (and therefore MSDis) in multithreaded applications without additional synchronization, you are doing so at your own risk.
 
 Minimal C++ sample:
 ```c++

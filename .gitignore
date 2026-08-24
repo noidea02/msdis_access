@@ -1,0 +1,39 @@
+# Visual Studio specific files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio CMake Integration builds here by default
+out/
+
+# Standard CMake build directories (if built from command line)
+build/
+build-*/
+bin/
+lib/
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# Compilation artifacts
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.lib
+*.pdb
+*.ilk
+*.idb
+
+# macOS/Linux artifacts
+.DS_Store
+*~

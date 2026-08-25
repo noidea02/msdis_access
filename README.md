@@ -9,7 +9,7 @@ The wrapper code itself is thread-safe, however the status of MSDis regarding th
 so far is being used in multithreaded applications successfully (without additional synchronization), however this still doesn't mean that MSDis is officially thread-safe. If you use this
 library (and therefore MSDis) in multithreaded applications without additional synchronization, you are doing so at your own risk.
 
-Minimal C++ sample:
+Except for adding the "include" directory of this repository to the include path, no special steps are required to integrate msdis_access into a project. Minimal C++ sample:
 ```c++
 #include <stdint.h>
 #include <iostream>
